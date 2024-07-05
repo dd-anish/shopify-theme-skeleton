@@ -1,0 +1,73 @@
+{% comment %} Should make a setting to decide which type of heading we're outputting instead of a heading size one. {% endcomment %}
+<h2
+  class="{{ block.settings | class_list }} w-full {{ block.settings.heading_size }} text-{{ block.settings.alignment }}"
+  {{ block.shopify_attributes }}
+>
+  {{ block.settings.heading }}
+</h2>
+
+{% schema %}
+{
+  "name": "Heading",
+  "tag": null,
+  "class": "heading-block",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Size",
+      "options": [
+        {
+          "value": "text-sm",
+          "label": "Small"
+        },
+        {
+          "value": "text-md",
+          "label": "Medium"
+        },
+        {
+          "value": "text-lg",
+          "label": "Large"
+        },
+        {
+          "value": "text-xl",
+          "label": "Extra Large"
+        }
+      ],
+      "default": "text-md"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Start"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "End"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "style.spacing_panel",
+      "id": "spacing",
+      "label": "Spacing"
+    }
+  ],
+  "presets": [{ "name": "Heading" }]
+}
+{% endschema %}
