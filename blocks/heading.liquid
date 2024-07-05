@@ -1,6 +1,6 @@
 {% comment %} Should make a setting to decide which type of heading we're outputting instead of a heading size one. {% endcomment %}
 <h2
-  class="{{ block.settings | class_list }} w-full {{ block.settings.heading_size }} text-{{ block.settings.alignment }}"
+  class="{{ block.settings | class_list }} w-full {{ block.settings.heading_size }} text-{{ block.settings.alignment }} {{ block.settings.style_text_header }}"
   {{ block.shopify_attributes }}
 >
   {{ block.settings.heading }}
@@ -24,6 +24,10 @@
       "label": "Size",
       "options": [
         {
+          "value": "text-xs",
+          "label": "Extra Small"
+        },
+        {
           "value": "text-sm",
           "label": "Small"
         },
@@ -38,9 +42,25 @@
         {
           "value": "text-xl",
           "label": "Extra Large"
+        },
+        {
+          "value": "text-2xl",
+          "label": "2x Large"
+        },
+        {
+          "value": "text-3xl",
+          "label": "3x Large"
+        },
+        {
+          "value": "text-4xl",
+          "label": "4x Large"
+        },
+        {
+          "value": "text-5xl",
+          "label": "5x Large"
         }
       ],
-      "default": "text-md"
+      "default": "text-lg"
     },
     {
       "type": "select",
@@ -66,7 +86,17 @@
       "type": "style.spacing_panel",
       "id": "spacing",
       "label": "Spacing"
-    }
+    },
+    {
+      "type": "header",
+      "content": "Tailwind styling classes"
+    },
+    {
+      "type": "text",
+      "id": "style_text_header",
+      "label": "Style Text Header",
+      "info": "Add classes to style header text"
+    },
   ],
   "presets": [{ "name": "Heading" }]
 }

@@ -1,5 +1,5 @@
 <div
-  class="{{ block.settings | class_list }} w-full {{ block.settings.text_style }} text-{{ block.settings.alignment }}"
+  class="{{ block.settings | class_list }} w-full {{ block.settings.text_style }} text-{{ block.settings.alignment }} {{ block.settings.style_text }} {{ block.settings.spacing }}"
   {{ block.shopify_attributes }}
 >
   {{ block.settings.text }}
@@ -60,7 +60,17 @@
       "type": "style.spacing_panel",
       "id": "spacing",
       "label": "Spacing"
-    }
+    },
+    {
+      "type": "header",
+      "content": "Tailwind styling classes"
+    },
+    {
+      "type": "text",
+      "id": "style_text",
+      "label": "Style Text",
+      "info": "Add classes to style text"
+    },
   ],
   "presets": [{ "name": "Text" }]
 }

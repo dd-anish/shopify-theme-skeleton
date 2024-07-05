@@ -1,6 +1,6 @@
 <div
-  class="{{ block.settings | class_list }} group-block group-block--{{ block.id }} color-{{ block.settings.color_scheme }}"
-  {{ block.shopify_attributes }}
+  class="{{ block.settings | class_list }} group-block group-block--{{ block.id }} color-{{ block.settings.color_scheme }} {{ block.settings.style_group }}"
+  {{ block.shopify_attributes }} 
 >
   {% content_for "blocks" %}
 </div>
@@ -53,7 +53,17 @@
       "id": "color_scheme",
       "label": "Color scheme",
       "default": "scheme-1"
-    }
+    },
+    {
+      "type": "header",
+      "content": "Tailwind styling classes"
+    },
+    {
+      "type": "textarea",
+      "id": "style_group",
+      "label": "Style Group",
+      "info": "Add classes to style the group block"
+    },
   ],
   "presets": [
     {

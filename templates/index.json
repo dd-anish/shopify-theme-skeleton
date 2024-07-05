@@ -18,10 +18,154 @@
       "type": "apps",
       "settings": {
       }
+    },
+    "custom_section_pqmTgE": {
+      "type": "custom-section",
+      "blocks": {
+        "group_K7wX7U": {
+          "type": "group",
+          "settings": {
+            "size": {
+            },
+            "spacing": {
+              "padding-block-start": "20px",
+              "padding-inline-end": "20px",
+              "padding-block-end": "20px",
+              "padding-inline-start": "20px"
+            },
+            "layout": {
+              "flex-direction": "row",
+              "align-items": "stretch",
+              "row-gap": "0px",
+              "column-gap": "0px"
+            },
+            "color_scheme": "scheme-1",
+            "style_group": ""
+          },
+          "blocks": {
+            "group_fqDrbR": {
+              "type": "group",
+              "settings": {
+                "size": {
+                },
+                "spacing": {
+                  "padding-block-start": "20px",
+                  "padding-inline-end": "20px",
+                  "padding-block-end": "20px",
+                  "padding-inline-start": "20px"
+                },
+                "layout": {
+                  "flex-direction": "row",
+                  "align-items": "flex-start",
+                  "row-gap": "0px",
+                  "column-gap": "0px"
+                },
+                "color_scheme": "scheme-3",
+                "style_group": "border-r-[1px] border-black"
+              },
+              "blocks": {
+                "heading_YTj74b": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "<strong>About US<\/strong>",
+                    "heading_size": "text-md",
+                    "alignment": "start",
+                    "spacing": {
+                    },
+                    "style_text_header": "md:text-3xl"
+                  }
+                }
+              },
+              "block_order": [
+                "heading_YTj74b"
+              ]
+            },
+            "group_9iBxGK": {
+              "type": "group",
+              "settings": {
+                "size": {
+                },
+                "spacing": {
+                  "padding-block-start": "20px",
+                  "padding-inline-end": "20px",
+                  "padding-block-end": "20px",
+                  "padding-inline-start": "20px"
+                },
+                "layout": {
+                  "flex-direction": "column",
+                  "align-items": "flex-start"
+                },
+                "color_scheme": "scheme-3",
+                "style_group": ""
+              },
+              "blocks": {
+                "heading_xBiXkT": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Our Story",
+                    "heading_size": "text-sm",
+                    "alignment": "start",
+                    "spacing": {
+                    },
+                    "style_text_header": ""
+                  }
+                },
+                "heading_8ytXyA": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Kyiv LuxeBouquets",
+                    "heading_size": "text-3xl",
+                    "alignment": "start",
+                    "spacing": {
+                    },
+                    "style_text_header": ""
+                  }
+                },
+                "text_6dzVdm": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We are a modern local floral studio, which specializes in the design and delivery of unique bouquets. We have the best florists who carefully select each look, our studio cooperates directly with farms for growing different flowers, so we always have fresh flowers, which are collected by our florists in exquisite bouquets. We have a collection of fresh bouquets, collections of dried bouquets, house plants, as well as fragrant candles from luxury brands to create the perfect atmosphere. Make someone's day amazing by sending flowers, plants and gifts the same or next day. Ordering flowers online has never been easier.<\/p>",
+                    "text_style": "text-sm",
+                    "alignment": "start",
+                    "spacing": {
+                      "padding-block-start": "0px"
+                    },
+                    "style_text": "md:text-lg"
+                  }
+                },
+                "button_jTeFYh": {
+                  "type": "button",
+                  "settings": {
+                    "button_label": "Learn More",
+                    "button_link": "",
+                    "tailwindbutton": "w-[150px] items-center mt-2 px-3 py-2 text-xs md:text-sm font-medium text-center border-1 hover:bg-black hover:text-white mx-auto border border-[1px] border-black"
+                  }
+                }
+              },
+              "block_order": [
+                "heading_xBiXkT",
+                "heading_8ytXyA",
+                "text_6dzVdm",
+                "button_jTeFYh"
+              ]
+            }
+          },
+          "block_order": [
+            "group_fqDrbR",
+            "group_9iBxGK"
+          ]
+        }
+      },
+      "block_order": [
+        "group_K7wX7U"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "00f180cc-37f9-4ca3-b4c4-fda0760014c8",
-    "1703136243197f9627"
+    "1703136243197f9627",
+    "custom_section_pqmTgE"
   ]
 }
