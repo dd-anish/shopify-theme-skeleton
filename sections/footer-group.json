@@ -1,12 +1,14 @@
 {
-    "name": "Footer Group",
-    "type": "footer",
-    "sections": {
-      "footer": {
-        "type": "dev__footer"
+  "name": "Footer Group",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "dev__footer",
+      "settings": {
       }
-    },
-    "order": [
-      "footer"
-    ]
-  }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

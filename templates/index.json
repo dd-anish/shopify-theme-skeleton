@@ -16,17 +16,6 @@
     },
     "1703136243197f9627": {
       "type": "apps",
-      "blocks": {
-        "7c450dac-4942-4fac-a28c-0a5a89d540f9": {
-          "type": "shopify:\/\/apps\/powr-image-slider\/blocks\/app-block\/db02efbb-fd06-4a97-88f3-663cfa9effba",
-          "settings": {
-            "app_id": "4d89ddd8_1703135906"
-          }
-        }
-      },
-      "block_order": [
-        "7c450dac-4942-4fac-a28c-0a5a89d540f9"
-      ],
       "settings": {
       }
     }

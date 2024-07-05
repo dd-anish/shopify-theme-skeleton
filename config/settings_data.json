@@ -113,23 +113,6 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "sections": {
-      "announcement-bar": {
-        "type": "announcement-bar",
-        "settings": {
-          "animation_duration": 4
-        }
-      },
-      "dev_header": {
-        "type": "dev_header",
-        "settings": {
-          "logo_alt": "",
-          "menu": "",
-          "search": false,
-          "cart": false
-        }
-      }
-    },
     "content_for_index": [
 
     ],

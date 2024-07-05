@@ -1,26 +1,84 @@
 {
-    "sections": {
-        "template": {
-            "type": "dev__main-product",
-            "blocks": {
-                "vendor": { "type": "vendor" },
-                "title": { "type": "title" },
-                "price": { "type": "price" },
-                "variant_selector": { "type": "variant_selector" },
-                "quantity": { "type": "quantity" },
-                "description": { "type": "description" },
-                "checkout_buttons": { "type": "checkout_buttons" }
-            },
-            "block_order": [
-                "vendor",
-                "title",
-                "price",
-                "variant_selector",
-                "quantity",
-                "description",
-                "checkout_buttons"
-            ]
+  "sections": {
+    "template": {
+      "type": "dev__main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "checkout_buttons": {
+          "type": "checkout_buttons",
+          "settings": {
+          }
         }
-    },
-    "order": ["template"]
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_selector",
+        "quantity",
+        "description",
+        "checkout_buttons"
+      ],
+      "settings": {
+        "sold-out_text": "Sold Out 1",
+        "add-to-cart_text": "Add to Cart",
+        "no-product_text": "No Product Selected.",
+        "main-container__classes": "max-w-6xl mx-auto my-8",
+        "sub-container__classes": "grid grid-cols-1 md:grid-cols-2 gap-3",
+        "product-image__classes": "grid justify-center p-4",
+        "product-information__classes": "top-5 p-2",
+        "vendor__classes": "my-3",
+        "vendor-text__classes": "text-xs text-gray-500",
+        "title__classes": "my-3",
+        "title-text__classes": "text-3xl text-gray-900",
+        "price__classes": "my-3",
+        "price-compare-text__classes": "text-base text-gray-500 line-through",
+        "price-text__classes": "text-lg text-gray-900",
+        "price-sales__classes": "px-5 py-1 text-sm font-bold bg-red-500 rounded-full text-white mx-4",
+        "variant__classes": "my-3",
+        "variant-sub__classes": "my-2",
+        "variant-select__classes": "w-full border py-3 px-3",
+        "quantity__classes": "my-3",
+        "quantity-sub__classes": "my-2",
+        "quantity-input__classes": "w-full border px-3 py-3",
+        "description__classes": "my-3",
+        "description-text__classes": "text-gray-700",
+        "checkout__classes": "my-3",
+        "checkout-button__classes": "w-full px-6 py-4 bg-gray-900 text-white hover:bg-gray-700 rounded-sm my-2",
+        "no-product__classes": "text-xl font-blod max-w-6xl mx-auto my-8"
+      }
+    }
+  },
+  "order": [
+    "template"
+  ]
 }
