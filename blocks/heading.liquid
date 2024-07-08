@@ -1,6 +1,6 @@
 {% comment %} Should make a setting to decide which type of heading we're outputting instead of a heading size one. {% endcomment %}
 <h2
-  class="{{ block.settings | class_list }} w-full {{ block.settings.heading_size }} text-{{ block.settings.alignment }} {{ block.settings.style_text_header }}"
+  class="{{ block.settings | class_list }} w-full text-{{ block.settings.alignment }} {{ block.settings.style_text_header }}"
   {{ block.shopify_attributes }}
 >
   {{ block.settings.heading }}
@@ -17,50 +17,6 @@
       "id": "heading",
       "label": "Heading",
       "default": "Heading"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "label": "Size",
-      "options": [
-        {
-          "value": "text-xs",
-          "label": "Extra Small"
-        },
-        {
-          "value": "text-sm",
-          "label": "Small"
-        },
-        {
-          "value": "text-md",
-          "label": "Medium"
-        },
-        {
-          "value": "text-lg",
-          "label": "Large"
-        },
-        {
-          "value": "text-xl",
-          "label": "Extra Large"
-        },
-        {
-          "value": "text-2xl",
-          "label": "2x Large"
-        },
-        {
-          "value": "text-3xl",
-          "label": "3x Large"
-        },
-        {
-          "value": "text-4xl",
-          "label": "4x Large"
-        },
-        {
-          "value": "text-5xl",
-          "label": "5x Large"
-        }
-      ],
-      "default": "text-lg"
     },
     {
       "type": "select",

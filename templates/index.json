@@ -83,13 +83,12 @@
                   "type": "heading",
                   "settings": {
                     "heading": "About Us",
-                    "heading_size": "text-xs",
                     "alignment": "start",
                     "spacing": {
                       "padding-block-start": "20px",
                       "padding-block-end": "20px"
                     },
-                    "style_text_header": "text-[33px] md:text-[50px]  font-[600] md:font-semibold leading[40.8px] md:leading[6 0px]"
+                    "style_text_header": "text-[34px] md:text-[50px]  font-[600] md:font-semibold leading[40.8px] md:leading[6 0px]"
                   }
                 }
               },
@@ -101,6 +100,10 @@
               "type": "group",
               "settings": {
                 "size": {
+                  "@media (--mobile)": {
+                    "width": "100%"
+                  },
+                  "flex-grow": "1"
                 },
                 "spacing": {
                   "padding-block-start": "40px",
@@ -110,7 +113,11 @@
                 },
                 "layout": {
                   "flex-direction": "column",
-                  "align-items": "flex-start"
+                  "align-items": "flex-start",
+                  "@media (--mobile)": {
+                    "flex-wrap": "nowrap",
+                    "align-items": "center"
+                  }
                 },
                 "color_scheme": "scheme-3",
                 "style_group": ""
@@ -120,7 +127,6 @@
                   "type": "heading",
                   "settings": {
                     "heading": "Our Story",
-                    "heading_size": "text-sm",
                     "alignment": "start",
                     "spacing": {
                     },
@@ -131,23 +137,21 @@
                   "type": "heading",
                   "settings": {
                     "heading": "Kyiv LuxeBouquets",
-                    "heading_size": "text-3xl",
                     "alignment": "start",
                     "spacing": {
                     },
-                    "style_text_header": "font-[500] text-[26 px] md:text-[38px] leading-[31.2px] md:leading-[45.6px]"
+                    "style_text_header": "font-[500] text-[26px] md:text-[38px] leading-[31.2px] md:leading-[45.6px]"
                   }
                 },
                 "text_6dzVdm": {
                   "type": "text",
                   "settings": {
                     "text": "<p>We are a modern local floral studio, which specializes in the design and delivery of unique bouquets. We have the best florists who carefully select each look, our studio cooperates directly with farms for growing different flowers, so we always have fresh flowers, which are collected by our florists in exquisite bouquets. We have a collection of fresh bouquets, collections of dried bouquets, house plants, as well as fragrant candles from luxury brands to create the perfect atmosphere. Make someone's day amazing by sending flowers, plants and gifts the same or next day. Ordering flowers online has never been easier.<\/p>",
-                    "text_style": "text-sm",
                     "alignment": "start",
                     "spacing": {
                       "padding-block-start": "0px"
                     },
-                    "style_text": "text-[16px] md:text-[16px] text-black lg:text-slate-500 font-[400] leading-[22.4px]"
+                    "style_text": "text-[16px] text-black lg:text-slate-500 font-[400] leading-[22.4px]"
                   }
                 },
                 "button_jTeFYh": {
@@ -155,7 +159,7 @@
                   "settings": {
                     "button_label": "Learn More",
                     "button_link": "",
-                    "tailwindbutton": "p-4 w-full md:w-[175px] md:h-[56px] hover:bg-black hover:text-white border-[1px] border-black flex items-center justify-center uppercase  font-[500] text-[14px] md:text-[16px] leading-[14px] md:leading-[19.2px]  tracking-[0.025em] md:tracking-[0.03em]"
+                    "tailwindbutton": "p-4 w-full mt-10 md:mt-4 md:w-[175px] md:h-[56px] hover:bg-black hover:text-white border-[1px] border-black flex items-center justify-center uppercase  font-[500] text-[14px] md:text-[16px] leading-[14px] md:leading-[19.2px]  tracking-[0.025em] md:tracking-[0.03em]"
                   }
                 }
               },
