@@ -28,31 +28,46 @@
             "size": {
             },
             "spacing": {
-              "padding-block-start": "20px",
+              "padding-block-start": "0px",
               "padding-inline-end": "20px",
-              "padding-block-end": "20px",
-              "padding-inline-start": "20px"
+              "padding-block-end": "0px",
+              "padding-inline-start": "20px",
+              "@media (--mobile)": {
+                "padding-inline-start": "0px",
+                "padding-inline-end": "0px"
+              }
             },
             "layout": {
               "flex-direction": "row",
               "align-items": "stretch",
               "row-gap": "0px",
-              "column-gap": "0px"
+              "column-gap": "0px",
+              "@media (--mobile)": {
+                "flex-direction": "column"
+              }
             },
             "color_scheme": "scheme-1",
-            "style_group": ""
+            "style_group": "border-y-[1px] border-black"
           },
           "blocks": {
             "group_fqDrbR": {
               "type": "group",
               "settings": {
                 "size": {
+                  "flex-grow": "1",
+                  "@media (--mobile)": {
+                    "width": "100%",
+                    "flex-grow": "1"
+                  }
                 },
                 "spacing": {
                   "padding-block-start": "20px",
                   "padding-inline-end": "20px",
                   "padding-block-end": "20px",
-                  "padding-inline-start": "20px"
+                  "padding-inline-start": "20px",
+                  "@media (--mobile)": {
+                    "padding-inline-start": "20px"
+                  }
                 },
                 "layout": {
                   "flex-direction": "row",
@@ -61,18 +76,20 @@
                   "column-gap": "0px"
                 },
                 "color_scheme": "scheme-3",
-                "style_group": "border-r-[1px] border-black"
+                "style_group": "border-b-[1px] sm:border-r-[1px] border-black"
               },
               "blocks": {
                 "heading_YTj74b": {
                   "type": "heading",
                   "settings": {
-                    "heading": "<strong>About US<\/strong>",
-                    "heading_size": "text-md",
+                    "heading": "About Us",
+                    "heading_size": "text-xs",
                     "alignment": "start",
                     "spacing": {
+                      "padding-block-start": "20px",
+                      "padding-block-end": "20px"
                     },
-                    "style_text_header": "md:text-3xl"
+                    "style_text_header": "text-[33px] md:text-[50px]  font-[600] md:font-semibold leading[40.8px] md:leading[6 0px]"
                   }
                 }
               },
@@ -86,9 +103,9 @@
                 "size": {
                 },
                 "spacing": {
-                  "padding-block-start": "20px",
+                  "padding-block-start": "40px",
                   "padding-inline-end": "20px",
-                  "padding-block-end": "20px",
+                  "padding-block-end": "30px",
                   "padding-inline-start": "20px"
                 },
                 "layout": {
@@ -107,7 +124,7 @@
                     "alignment": "start",
                     "spacing": {
                     },
-                    "style_text_header": ""
+                    "style_text_header": "uppercase text-[12px] md:text-[14px] font-[500] leading-[14.4px]     md:leading-[16.8px]"
                   }
                 },
                 "heading_8ytXyA": {
@@ -118,7 +135,7 @@
                     "alignment": "start",
                     "spacing": {
                     },
-                    "style_text_header": ""
+                    "style_text_header": "font-[500] text-[26 px] md:text-[38px] leading-[31.2px] md:leading-[45.6px]"
                   }
                 },
                 "text_6dzVdm": {
@@ -130,7 +147,7 @@
                     "spacing": {
                       "padding-block-start": "0px"
                     },
-                    "style_text": "md:text-lg"
+                    "style_text": "text-[16px] md:text-[16px] text-black lg:text-slate-500 font-[400] leading-[22.4px]"
                   }
                 },
                 "button_jTeFYh": {
@@ -138,7 +155,7 @@
                   "settings": {
                     "button_label": "Learn More",
                     "button_link": "",
-                    "tailwindbutton": "w-[150px] items-center mt-2 px-3 py-2 text-xs md:text-sm font-medium text-center border-1 hover:bg-black hover:text-white mx-auto border border-[1px] border-black"
+                    "tailwindbutton": "p-4 w-full md:w-[175px] md:h-[56px] hover:bg-black hover:text-white border-[1px] border-black flex items-center justify-center uppercase  font-[500] text-[14px] md:text-[16px] leading-[14px] md:leading-[19.2px]  tracking-[0.025em] md:tracking-[0.03em]"
                   }
                 }
               },
@@ -161,11 +178,27 @@
       ],
       "settings": {
       }
+    },
+    "dev_contact_form_chRkcm": {
+      "type": "dev__contact-form",
+      "settings": {
+        "contact_title": "Contact Us",
+        "send_button_text": "Send Message",
+        "contact": "w-full dark:bg-gray-900 dark:text-white py-10 text-center mx-auto",
+        "contact__style--title": "text-2xl md:text-4xl font-bold",
+        "contact__style--form": "mt-5 md:mt-7 w-full mx-auto px-6 md:w-3\/5",
+        "contact__form_styles": "flex flex-col items-center",
+        "contact__1st-row": "flex justify-between gap-2 w-full",
+        "contact__style--input": "w-full px-2 py-1 text-sm md:text-base border rounded-md bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500",
+        "contact__style--textarea": "w-full px-2 py-1 text-sm md:text-base border rounded-md bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500",
+        "contact__submit-button": "py-1 px-2 block mx-auto md:py-3 md:px-5 md:w-full text-sm font-medium text-center bg-blue-600 text-white rounded-md border cursor-pointer bg-primary-700 border-primary-600 hover:bg-blue-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+      }
     }
   },
   "order": [
     "00f180cc-37f9-4ca3-b4c4-fda0760014c8",
     "1703136243197f9627",
-    "custom_section_pqmTgE"
+    "custom_section_pqmTgE",
+    "dev_contact_form_chRkcm"
   ]
 }
