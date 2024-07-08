@@ -66,14 +66,16 @@
                   "padding-block-end": "20px",
                   "padding-inline-start": "20px",
                   "@media (--mobile)": {
-                    "padding-inline-start": "20px"
+                    "padding-inline-start": "40px",
+                    "padding-inline-end": "40px"
                   }
                 },
                 "layout": {
                   "flex-direction": "row",
-                  "align-items": "flex-start",
+                  "align-items": "stretch",
                   "row-gap": "0px",
-                  "column-gap": "0px"
+                  "column-gap": "0px",
+                  "justify-content": "space-between"
                 },
                 "color_scheme": "scheme-3",
                 "style_group": "border-b-[1px] md:border-b-0  md:border-r-[1px] border-black"
@@ -108,8 +110,8 @@
                 "spacing": {
                   "padding-block-start": "40px",
                   "padding-inline-end": "20px",
-                  "padding-block-end": "30px",
-                  "padding-inline-start": "20px"
+                  "padding-block-end": "40px",
+                  "padding-inline-start": "40px"
                 },
                 "layout": {
                   "flex-direction": "column",
@@ -190,45 +192,161 @@
           "type": "group",
           "settings": {
             "size": {
+              "height": "auto"
             },
             "spacing": {
-              "padding-block-start": "20px",
+              "padding-block-start": "0px",
               "padding-inline-end": "20px",
-              "padding-block-end": "20px",
-              "padding-inline-start": "20px"
+              "padding-block-end": "0px",
+              "padding-inline-start": "20px",
+              "@media (--mobile)": {
+                "padding-inline-start": "0px",
+                "padding-inline-end": "0px"
+              }
             },
             "layout": {
-              "flex-direction": "column",
-              "align-items": "flex-start"
+              "flex-direction": "row",
+              "align-items": "stretch",
+              "justify-content": "center",
+              "row-gap": "0px",
+              "column-gap": "0px"
             },
             "color_scheme": "scheme-3",
-            "style_group": "bg-red-200"
+            "style_group": ""
           },
           "blocks": {
-            "heading_KncAxe": {
-              "type": "heading",
+            "group_CKdqdn": {
+              "type": "group",
               "settings": {
-                "heading": "Column",
-                "alignment": "start",
-                "spacing": {
+                "size": {
+                  "height": "auto",
+                  "width": "100%",
+                  "flex-grow": "1"
                 },
-                "style_text_header": ""
-              }
+                "spacing": {
+                  "padding-block-start": "40px",
+                  "padding-inline-end": "20px",
+                  "padding-block-end": "20px",
+                  "padding-inline-start": "20px",
+                  "@media (--mobile)": {
+                    "padding-inline-start": "40px",
+                    "padding-block-start": "20px",
+                    "padding-inline-end": "40px"
+                  }
+                },
+                "layout": {
+                  "flex-direction": "column",
+                  "align-items": "stretch",
+                  "row-gap": "0px",
+                  "column-gap": "0px",
+                  "flex-wrap": "nowrap",
+                  "justify-content": "flex-start"
+                },
+                "color_scheme": "scheme-3",
+                "style_group": "border-r-[0px] md:border-r-[1px] border-black border-b-[1px]  md:border-b-[0px]"
+              },
+              "blocks": {
+                "heading_9ERzAk": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Why choose us ?",
+                    "alignment": "start",
+                    "spacing": {
+                      "@media (--mobile)": {
+                        "padding-block-start": "20px",
+                        "padding-block-end": "20px"
+                      }
+                    },
+                    "style_text_header": "text-[34px] md:text-[50px]  font-[600] md:font-semibold leading[40.8px] md:leading[6 0px]"
+                  }
+                }
+              },
+              "block_order": [
+                "heading_9ERzAk"
+              ]
             },
-            "text_b6NRdc": {
-              "type": "text",
+            "group_e9FWWa": {
+              "type": "group",
               "settings": {
-                "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-                "alignment": "start",
-                "spacing": {
+                "size": {
                 },
-                "style_text": ""
-              }
+                "spacing": {
+                  "padding-block-start": "40px",
+                  "padding-inline-end": "20px",
+                  "padding-block-end": "40px",
+                  "padding-inline-start": "40px",
+                  "@media (--mobile)": {
+                    "padding-inline-start": "20px",
+                    "padding-inline-end": "20px",
+                    "padding-block-start": "20px",
+                    "padding-block-end": "20px"
+                  }
+                },
+                "layout": {
+                  "flex-direction": "column",
+                  "align-items": "flex-start",
+                  "row-gap": "0px",
+                  "column-gap": "0px",
+                  "justify-content": "center"
+                },
+                "color_scheme": "scheme-3",
+                "style_group": ""
+              },
+              "blocks": {
+                "group_yUCc4m": {
+                  "type": "group",
+                  "settings": {
+                    "size": {
+                    },
+                    "spacing": {
+                      "padding-block-start": "20px",
+                      "padding-inline-end": "20px",
+                      "padding-block-end": "20px",
+                      "padding-inline-start": "20px"
+                    },
+                    "layout": {
+                      "flex-direction": "column",
+                      "align-items": "flex-start"
+                    },
+                    "color_scheme": "scheme-3",
+                    "style_group": ""
+                  },
+                  "blocks": {
+                    "heading_M3abCK": {
+                      "type": "heading",
+                      "settings": {
+                        "heading": "Stylish bouquets by florists",
+                        "alignment": "start",
+                        "spacing": {
+                        },
+                        "style_text_header": "font-[500] text-[26px] md:text-[38px] leading-[31.2px] md:leading-[45.6px]"
+                      }
+                    },
+                    "text_3pFDLk": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>At our floral studio, our professional florists craft the most elegant and stylish bouquets using only the freshest and highest quality materials available. We stay up-to-date with the latest floral design trends and offer unique arrangements that are sure to impress. Let us brighten up your day with our stunning bouquets and same-day delivery service.<\/p>",
+                        "alignment": "start",
+                        "spacing": {
+                        },
+                        "style_text": "text-[16px] text-black font-[400] leading-[22.4px]"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "heading_M3abCK",
+                    "text_3pFDLk"
+                  ]
+                }
+              },
+              "block_order": [
+                "group_yUCc4m"
+              ]
             }
           },
           "block_order": [
-            "heading_KncAxe",
-            "text_b6NRdc"
+            "group_CKdqdn",
+            "group_e9FWWa"
           ]
         }
       },
@@ -236,6 +354,29 @@
         "group_px77mX"
       ],
       "settings": {
+      }
+    },
+    "dev_background_rRT4R7": {
+      "type": "dev__background",
+      "settings": {
+        "display_mode": "block",
+        "margin_top_value": 100,
+        "margin_top_unit": "px",
+        "margin_right_value": 0,
+        "margin_right_unit": "px",
+        "margin_bottom_value": 0,
+        "margin_bottom_unit": "px",
+        "margin_left_value": 0,
+        "margin_left_unit": "px",
+        "padding_top_value": 0,
+        "padding_top_unit": "px",
+        "padding_right_value": 0,
+        "padding_right_unit": "px",
+        "padding_bottom_value": 0,
+        "padding_bottom_unit": "px",
+        "padding_left_value": 0,
+        "padding_left_unit": "px",
+        "background_color": "#f5e5e5"
       }
     },
     "dev_contact_form_chRkcm": {
@@ -259,6 +400,7 @@
     "1703136243197f9627",
     "custom_section_pqmTgE",
     "custom_section_LagxL8",
+    "dev_background_rRT4R7",
     "dev_contact_form_chRkcm"
   ]
 }
