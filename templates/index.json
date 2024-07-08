@@ -76,7 +76,7 @@
                   "column-gap": "0px"
                 },
                 "color_scheme": "scheme-3",
-                "style_group": "border-b-[1px] sm:border-r-[1px] border-black"
+                "style_group": "border-b-[1px] md:border-b-0  md:border-r-[1px] border-black"
               },
               "blocks": {
                 "heading_YTj74b": {
@@ -183,6 +183,61 @@
       "settings": {
       }
     },
+    "custom_section_LagxL8": {
+      "type": "custom-section",
+      "blocks": {
+        "group_px77mX": {
+          "type": "group",
+          "settings": {
+            "size": {
+            },
+            "spacing": {
+              "padding-block-start": "20px",
+              "padding-inline-end": "20px",
+              "padding-block-end": "20px",
+              "padding-inline-start": "20px"
+            },
+            "layout": {
+              "flex-direction": "column",
+              "align-items": "flex-start"
+            },
+            "color_scheme": "scheme-3",
+            "style_group": "bg-red-200"
+          },
+          "blocks": {
+            "heading_KncAxe": {
+              "type": "heading",
+              "settings": {
+                "heading": "Column",
+                "alignment": "start",
+                "spacing": {
+                },
+                "style_text_header": ""
+              }
+            },
+            "text_b6NRdc": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+                "alignment": "start",
+                "spacing": {
+                },
+                "style_text": ""
+              }
+            }
+          },
+          "block_order": [
+            "heading_KncAxe",
+            "text_b6NRdc"
+          ]
+        }
+      },
+      "block_order": [
+        "group_px77mX"
+      ],
+      "settings": {
+      }
+    },
     "dev_contact_form_chRkcm": {
       "type": "dev__contact-form",
       "settings": {
@@ -203,6 +258,7 @@
     "00f180cc-37f9-4ca3-b4c4-fda0760014c8",
     "1703136243197f9627",
     "custom_section_pqmTgE",
+    "custom_section_LagxL8",
     "dev_contact_form_chRkcm"
   ]
 }
