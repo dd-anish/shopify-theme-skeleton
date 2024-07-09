@@ -1686,6 +1686,11 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-brand-light-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 210 215 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -1970,6 +1975,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-desktop-heading-1 {
+  font-size: 67px;
+  line-height: 120%;
 }
 
 .font-bold {
