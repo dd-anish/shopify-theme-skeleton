@@ -24,34 +24,23 @@
 
     {% render 'meta-tags' %}
     {% if settings.tailwind_enabled %}
-      {{ 'output.css' | asset_url | stylesheet_tag }}
-      
-      {% comment %} {% if request.design_mode %}
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            document.body.style.opacity = "1";
-          });
-        </script>
-        
+      {% if request.design_mode %}
         {% # theme-check-disable %}
         <script src="https://cdn.tailwindcss.com"></script>
         {% # theme-check-enable %}
         <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            {{ settings.tailwind_config }}
-          });
+          tailwind.config = {{ settings.tailwind_config }};
         </script>   
         <style type='text/tailwindcss'>
           {{ settings.tailwind_css }}
-        </style>             
+        </style>            
       {% else %}
-      {{ 'output.css' | asset_url | stylesheet_tag }}
-      {% endif %} {% endcomment %}
-       
-    {% else %}      
+        {{ 'output.css' | asset_url | append: '?v=' | append: 'now' | stylesheet_tag }}
+      {% endif %}
+    {% else %}
       {{ 'base.css' | asset_url | stylesheet_tag }}
     {% endif %}
-        
+
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
 
     {{ content_for_header }}
@@ -63,11 +52,10 @@
       }
     </script>
     {%- liquid
-      assign heading_font_medium = settings.heading_font | font_modify: 'weight', "500"
+      assign heading_font_medium = settings.heading_font | font_modify: 'weight', '500'
     %}
-    
-    {% style %}
 
+    {% style %}
       {{ settings.heading_font | font_face: font_display: 'swap' }}
       {{ heading_font_medium | font_face: font_display: 'swap' }}
       {{ settings.body_font | font_face: font_display: 'swap' }}
@@ -101,7 +89,7 @@
     {% endstyle %}
   </head>
 
-  <body> 
+  <body>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -109,7 +97,6 @@
     {% if settings.initial_modal_enabled and template == 'index' %}
       {% section 'dev__modal' %}
     {% endif %}
-
 
     {% comment %}
       {% section 'dev__announcement-bar' %}

@@ -42,18 +42,34 @@
         "hero__image": "shopify:\/\/shop_images\/heroimage.jpg",
         "hero__description": "Experience the joy of giving with our modern floral studio. Order online and send fresh flowers, plants and gifts today.",
         "hero": "flex flex-wrap",
-        "hero__left-col": "border-[1px] border-brand-light-gray w-full bg-brand-dark-gray",
+        "hero__left-col": "border-[1px] border-brand-red bg-brand-red",
         "hero__header": "",
-        "hero__title": "text-desktop-heading-3",
+        "hero__title": "text-desktop-heading-4 text-brand-red",
         "hero__subtitle": "",
         "hero__content": "",
         "tail-hero__image": "",
         "tail-hero__description": "",
         "hero__right-col": "w-full"
       }
+    },
+    "dev_contact_form_BgDexX": {
+      "type": "dev__contact-form",
+      "settings": {
+        "contact_title": "Contact Us",
+        "send_button_text": "Send Message",
+        "contact": "w-full  bg-red-200 bg-brand-red",
+        "contact__style--title": "text-2xl md:text-4xl font-bold",
+        "contact__style--form": "mt-5 md:mt-7 w-full mx-auto px-6 md:w-3\/5",
+        "contact__form_styles": "flex flex-col items-center",
+        "contact__1st-row": "flex justify-between gap-2 w-full",
+        "contact__style--input": "w-full px-2 py-1 text-sm md:text-base border rounded-md bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500",
+        "contact__style--textarea": "w-full px-2 py-1 text-sm md:text-base border rounded-md bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500",
+        "contact__submit-button": "py-1 px-2 block mx-auto md:py-3 md:px-5 md:w-full text-sm font-medium text-center bg-blue-600 text-white rounded-md border cursor-pointer bg-primary-700 border-primary-600 hover:bg-blue-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+      }
     }
   },
   "order": [
-    "hero_XVGR7H"
+    "hero_XVGR7H",
+    "dev_contact_form_BgDexX"
   ]
 }

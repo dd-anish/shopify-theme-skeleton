@@ -4,6 +4,15 @@
       <h1 class="hero__title {{ section.settings.hero__title }}">{{ section.settings['hero-main'] }}</h1>
       <p class="hero__subtitle {{ section.settings.hero__subtitle }}">{{ section.settings['hero-main-richtext'] }}</p>
     </div>
+
+    <div class="bg-brand-blue p-4 m-4">
+      <p class="text-white">Test Tailwind Custom Color</p>
+    </div>
+
+    <div style="background-color: #424245; padding: 1rem; margin: 1rem;">
+      <p style="color: white;">Test Inline Styles</p>
+    </div>
+
     <div class="hero__content {{ section.settings.hero__content }}">
       {% if section.settings.hero__image != blank %}
         {{
