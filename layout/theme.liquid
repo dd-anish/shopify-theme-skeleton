@@ -24,7 +24,9 @@
 
     {% render 'meta-tags' %}
     {% if settings.tailwind_enabled %}
-      {% if request.design_mode %}
+      {{ 'output.css' | asset_url | stylesheet_tag }}
+      
+      {% comment %} {% if request.design_mode %}
         <script>
           document.addEventListener("DOMContentLoaded", function() {
             document.body.style.opacity = "1";
@@ -44,7 +46,8 @@
         </style>             
       {% else %}
       {{ 'output.css' | asset_url | stylesheet_tag }}
-      {% endif %}
+      {% endif %} {% endcomment %}
+       
     {% else %}      
       {{ 'base.css' | asset_url | stylesheet_tag }}
     {% endif %}
@@ -98,7 +101,7 @@
     {% endstyle %}
   </head>
 
-  <body {% if settings.tailwind_enabled and request.design_mode %}style="opacity:0;transition:0.1s ease;"{% endif %}>
+  <body> 
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
