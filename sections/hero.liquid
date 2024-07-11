@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class="hero__right-col {{ section.settings.hero__right-col }}">
-    {% assign first_block = true %}
+    {% assign first_block = false %}
     {% for block in section.blocks %}
       {% if block.type == 'collection' and block.settings.collection != blank %}
         <div class="hero__row {{ block.settings.hero__row }} {% if block.settings.reverse-image %} flex-row-reverse	{% endif %} {% unless first_block %}border-t-0 {% endunless %}">

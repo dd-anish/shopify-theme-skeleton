@@ -51,9 +51,62 @@
         "mobile_menu_dropdown_inner_classes": "-m-3 p-3 mt-2 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50",
         "mobile_menu_dropdown_link_classes": "ml-3 text-base font-medium text-gray-500"
       }
+    },
+    "navbar_TJKtmj": {
+      "type": "navbar",
+      "blocks": {
+        "left_menu_item_j7qRLq": {
+          "type": "left_menu_item",
+          "settings": {
+            "title": "Shop",
+            "link": "",
+            "menu_item_classes": "text-gray-600 hover:text-gray-900 border-brand-black border-r-[1px] flex items-center justify-center w-[180px]"
+          }
+        },
+        "left_menu_item_U6hnGw": {
+          "type": "left_menu_item",
+          "settings": {
+            "title": "Contact",
+            "link": "",
+            "menu_item_classes": "text-gray-600 hover:text-gray-900 border-brand-black border-r-[1px] flex items-center justify-center w-[180px]"
+          }
+        },
+        "right_menu_item_PDQHft": {
+          "type": "right_menu_item",
+          "settings": {
+            "title": "Sign In",
+            "link": "",
+            "menu_item_classes": "text-gray-600 hover:text-gray-900 border-brand-black border-l-[1px] flex items-center justify-center w-[180px]",
+            "icon": "icon-user"
+          }
+        },
+        "right_menu_item_iETaBt": {
+          "type": "right_menu_item",
+          "settings": {
+            "title": "Sign In",
+            "link": "",
+            "menu_item_classes": "text-gray-600 hover:text-gray-900 border-brand-black border-l-[1px] flex items-center justify-center w-[180px]",
+            "icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "left_menu_item_j7qRLq",
+        "left_menu_item_U6hnGw",
+        "right_menu_item_PDQHft",
+        "right_menu_item_iETaBt"
+      ],
+      "settings": {
+        "navbar_classes": "h-[83px] fixed w-full bg-red-200 z-10",
+        "container_classes": "border-[1px] border-brand-black  flex justify-between h-full",
+        "navbar__menu_left": "hidden md:flex h-full",
+        "navbar__menu_right": "hidden md:flex h-full",
+        "mobile_menu_classes": "md:hidden p-2"
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "navbar_TJKtmj"
   ]
 }
