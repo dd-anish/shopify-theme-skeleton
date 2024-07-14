@@ -1054,6 +1054,10 @@ video {
   height: 350px;
 }
 
+.h-\[47px\] {
+  height: 47px;
+}
+
 .h-\[48px\] {
   height: 48px;
 }
@@ -1062,8 +1066,8 @@ video {
   height: 500px;
 }
 
-.h-\[calc\(100\%_-_48px\)\] {
-  height: calc(100% - 48px);
+.h-\[calc\(100\%_-_47px\)\] {
+  height: calc(100% - 47px);
 }
 
 .h-auto {
@@ -1076,18 +1080,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-\[47px\] {
-  height: 47px;
-}
-
-.h-\[calc\(100\%_-_47px\)\] {
-  height: calc(100% - 47px);
 }
 
 .w-1 {
@@ -1206,10 +1198,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .max-w-2xl {
@@ -1622,14 +1610,6 @@ video {
   border-top-width: 1px;
 }
 
-.border-l {
-  border-left-width: 1px;
-}
-
-.border-r {
-  border-right-width: 1px;
-}
-
 .border-solid {
   border-style: solid;
 }
@@ -1776,11 +1756,6 @@ video {
 .bg-red-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
-}
-
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .bg-red-500 {
@@ -2402,12 +2377,12 @@ video {
   transition-duration: 1000ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .ease-in-out {
@@ -3120,16 +3095,12 @@ video {
     height: 500px;
   }
 
-  .md\:h-\[56px\] {
-    height: 56px;
-  }
-
-  .md\:h-\[calc\(100\%_-_56px\)\] {
-    height: calc(100% - 56px);
-  }
-
   .md\:h-\[55px\] {
     height: 55px;
+  }
+
+  .md\:h-\[56px\] {
+    height: 56px;
   }
 
   .md\:h-\[calc\(100\%_-_55px\)\] {
@@ -3626,12 +3597,6 @@ video {
     padding-bottom: 0px;
   }
 
-  .lg\:transition-opacity {
-    transition-property: opacity;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-  }
-
   .lg\:hide-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -3639,14 +3604,6 @@ video {
 
   .lg\:hide-scrollbar::-webkit-scrollbar {
     display: none;
-  }
-
-  .lg\:hover\:opacity-70:hover {
-    opacity: 0.7;
-  }
-
-  .lg\:hover\:opacity-80:hover {
-    opacity: 0.8;
   }
 }
 

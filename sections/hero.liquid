@@ -8,12 +8,22 @@
     </div>
     <div class="hero__content {{ section.settings.hero__content }}">
       {% if section.settings.hero__image != blank %}
-        {{
-          section.settings.hero__image
-          | image_url: width: 200
-          | image_tag: class: section.settings['tail-hero__image']
+        {% capture srcset %}
+          {{ section.settings.hero__image | image_url: width: 300 }} 300w, 
+          {{ section.settings.hero__image | image_url: width: 600 }} 600w, 
+          {{ section.settings.hero__image | image_url: width: 1200 }} 1200w
+        {% endcapture %}
+        
+        {{ section.settings.hero__image 
+          | image_url: width: 300 
+          | image_tag: 
+            class: section.settings['tail-hero__image'],
+            srcset: srcset,
+            sizes: '(max-width: 767px) 300px, (min-width: 768px) and (max-width: 1439px) 600px, (min-width: 1440px) 1200px',
+            loading: 'lazy'
         }}
       {% endif %}
+
       <p class="hero__description {{ section.settings.tail-hero__description }}">
         {{ section.settings.hero__description }}
       </p>
