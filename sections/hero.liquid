@@ -8,20 +8,17 @@
     </div>
     <div class="hero__content {{ section.settings.hero__content }}">
       {% if section.settings.hero__image != blank %}
-        {% capture srcset %}
-          {{ section.settings.hero__image | image_url: width: 300 }} 300w, 
-          {{ section.settings.hero__image | image_url: width: 600 }} 600w, 
-          {{ section.settings.hero__image | image_url: width: 1200 }} 1200w
-        {% endcapture %}
-        
-        {{ section.settings.hero__image 
-          | image_url: width: 300 
-          | image_tag: 
-            class: section.settings['tail-hero__image'],
-            srcset: srcset,
-            sizes: '(max-width: 767px) 300px, (min-width: 768px) and (max-width: 1439px) 600px, (min-width: 1440px) 1200px',
-            loading: 'lazy'
-        }}
+        {% assign img_url = section.settings.hero__image | image_url: width: 1250 %}
+        <img 
+          src="{{ img_url }}"
+          class="{{ section.settings['tail-hero__image'] }}"
+          {% if section.settings.hero__image.width >= 350 %}srcset="{{ section.settings.hero__image | image_url: width: 350 }} 350w, {{ section.settings.hero__image | image_url: width: 650 }} 650w, {{ section.settings.hero__image | image_url: width: 1250 }} 1250w"{% endif %}
+          sizes="(max-width: 767px) 350px, (min-width: 768px) and (max-width: 1439px) 650px, 1250px"
+          width="{{ section.settings.hero__image.width }}"
+          height="{{ section.settings.hero__image.height }}"
+          loading="lazy"
+          alt="{{ section.settings.hero__image.alt | escape }}"
+        >
       {% endif %}
 
       <p class="hero__description {{ section.settings.tail-hero__description }}">
