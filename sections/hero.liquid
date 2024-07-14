@@ -8,17 +8,15 @@
     </div>
     <div class="hero__content {{ section.settings.hero__content }}">
       {% if section.settings.hero__image != blank %}
-        {% assign img_url = section.settings.hero__image | image_url: width: 1250 %}
-        <img 
-          src="{{ img_url }}"
-          class="{{ section.settings['tail-hero__image'] }}"
-          {% if section.settings.hero__image.width >= 350 %}srcset="{{ section.settings.hero__image | image_url: width: 350 }} 350w, {{ section.settings.hero__image | image_url: width: 650 }} 650w, {{ section.settings.hero__image | image_url: width: 1250 }} 1250w"{% endif %}
-          sizes="(max-width: 767px) 350px, (min-width: 768px) and (max-width: 1439px) 650px, 1250px"
-          width="{{ section.settings.hero__image.width }}"
-          height="{{ section.settings.hero__image.height }}"
-          loading="lazy"
-          alt="{{ section.settings.hero__image.alt | escape }}"
-        >
+        {% assign mobile_image = section.settings.hero__image | image_url: width: 350 %}
+        {% assign tablet_image = section.settings.hero__image | image_url: width: 650 %}
+        {% assign desktop_image = section.settings.hero__image | image_url: width: 1250 %}
+        
+        <picture>
+          <source media="(min-width: 1440px)" srcset="{{ desktop_image }}">
+          <source media="(min-width: 768px)" srcset="{{ tablet_image }}">
+          <img src="{{ mobile_image }}" alt="{{ section.settings.hero__image.alt | escape }}" class="{{ section.settings['tail-hero__image'] }}" loading="lazy">
+        </picture>
       {% endif %}
 
       <p class="hero__description {{ section.settings.tail-hero__description }}">
