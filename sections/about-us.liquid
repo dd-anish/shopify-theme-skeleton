@@ -1,0 +1,129 @@
+<div class="about_us__container {{ section.settings.about_us__container }}">
+
+    <div class="about_us__container_left {{ section.settings.about_us__container_left }}">
+        <h2 class="about_us__container_left_heading_classes {{ section.settings.about_us__container_left_heading_classes }}">
+            {{ section.settings.about_us__container_left_heading }}
+        </h2>
+    </div>
+
+    <div class="about_us__container_right {{ section.settings.about_us__container_right }}">
+        <h6 class="about_us__container_right_small_header_classes {{ section.settings.about_us__container_right_small_header_classes }}">
+            {{ section.settings.about_us__container_right_small_header }}
+        </h6>
+        <h4 class="about_us__container_right_sub_header_classes {{ section.settings.about_us__container_right_sub_header_classes }}">
+            {{ section.settings.about_us__container_right_sub_header }}
+        </h4>
+        <p class="about_us__container_right_description_classes {{ section.settings.about_us__container_right_description_classes }}">
+            {{ section.settings.about_us__container_right_description }}
+        </p>
+
+        <button class="{{ section.settings.about_us__container_right_button }}">
+            {%- if section.settings.about_us__container_right_button_label != blank -%}
+                <a href="{{ section.settings.about_us__container_right_button_link }}">
+                    {{- section.settings.about_us__container_right_button_label | escape -}}
+                </a>
+            {%- endif -%}
+        </button>
+    </div>
+
+</div>
+
+{% schema %}
+{
+    "name": "About Us",
+    "enabled_on": {
+        "templates": ["page"]
+    },
+    "settings": [
+        {
+            "type": "text",
+            "id": "about_us__container",
+            "label": "Container Classes",
+            "default": "flex flex-col md:flex-row w-full"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_left",
+            "label": "Left Container Classes",
+            "default": "w-full md:w-1/2 p-4"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_left_heading_classes",
+            "label": "Left Heading Classes",
+            "default": "text-3xl font-bold mb-4"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_left_heading",
+            "label": "Left Heading Text",
+            "default": "John Doe"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_right",
+            "label": "Right Container Classes",
+            "default": "w-full md:w-1/2 p-4"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_right_small_header_classes",
+            "label": "Right Small Header Classes",
+            "default": "text-sm font-semibold mb-2"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_right_small_header",
+            "label": "Right Small Header Text",
+            "default": "John Doe"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_right_sub_header_classes",
+            "label": "Right Sub Header Classes",
+            "default": "text-xl font-bold mb-2"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_right_sub_header",
+            "label": "Right Sub Header Text",
+            "default": "John Doe"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_right_description_classes",
+            "label": "Right Description Classes",
+            "default": "text-base mb-4"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_right_description",
+            "label": "Right Description Text",
+            "default": "Co-Founder"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_right_button",
+            "label": "Button Classes",
+            "default": "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        },
+        {
+            "type": "text",
+            "id": "about_us__container_right_button_label",
+            "label": "Button Label",
+            "default": "Learn More"
+        },
+        {
+            "type": "url",
+            "id": "about_us__container_right_button_link",
+            "label": "Button Link"
+        }
+    ],
+    "presets": [
+        {
+            "name": "About Us",
+            "category": "Custom Sections"
+        }
+    ]
+}
+{% endschema %}

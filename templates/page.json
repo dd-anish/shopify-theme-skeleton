@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "try-page": {
+      "type": "try-page",
+      "settings": {
+      }
+    },
+    "about_us_zy8PxC": {
+      "type": "about-us",
+      "settings": {
+        "about_us__container": "flex flex-col md:flex-row w-full",
+        "about_us__container_left": "w-full md:w-1\/2 p-4",
+        "about_us__container_left_heading_classes": "text-3xl font-bold mb-4",
+        "about_us__container_left_heading": "John Doe",
+        "about_us__container_right": "w-full md:w-1\/2 p-4",
+        "about_us__container_right_small_header_classes": "text-sm font-semibold mb-2",
+        "about_us__container_right_small_header": "John Doe",
+        "about_us__container_right_sub_header_classes": "text-xl font-bold mb-2",
+        "about_us__container_right_sub_header": "John Doe",
+        "about_us__container_right_description_classes": "text-base mb-4",
+        "about_us__container_right_description": "Co-Founder",
+        "about_us__container_right_button": "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+        "about_us__container_right_button_label": "Learn More",
+        "about_us__container_right_button_link": ""
+      }
+    }
+  },
+  "order": [
+    "try-page",
+    "about_us_zy8PxC"
+  ]
+}
