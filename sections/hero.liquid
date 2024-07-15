@@ -12,14 +12,14 @@
           <picture>
             <source
               media="(min-width: 1440px)"
-              srcset="{{ section.settings.hero__image | image_url: width: 1250 }} 1x, {{ section.settings.hero__image | image_url: width: 2500 }} 2x"
+              srcset="{{ section.settings.hero__image | image_url: width: 1200 }} 1x, {{ section.settings.hero__image | image_url: width: 2400 }} 2x"
             >
             <source
               media="(min-width: 768px)"
-              srcset="{{ section.settings.hero__image | image_url: width: 650 }} 1x, {{ section.settings.hero__image | image_url: width: 1300 }} 2x"
+              srcset="{{ section.settings.hero__image | image_url: width: 600 }} 1x, {{ section.settings.hero__image | image_url: width: 1200 }} 2x"
             >
             <source
-              srcset="{{ section.settings.hero__image | image_url: width: 350 }} 1x, {{ section.settings.hero__image | image_url: width: 700 }} 2x"
+              srcset="{{ section.settings.hero__image | image_url: width: 300 }} 1x, {{ section.settings.hero__image | image_url: width: 600 }} 2x"
             >
             {{ 
               section.settings.hero__image 
@@ -147,13 +147,13 @@
       "type": "textarea",
       "id": "tail-hero__image_container",
       "label": "Style hero__image container",
-      "default": "w-1/2 pr-4 object-cover border-r-[1px] border-brand-black"
+      "default": "w-1/2 pr-4 md:pr-6 border-r-[1px] border-brand-black"
     },
     {
       "type": "textarea",
       "id": "tail-hero__image",
       "label": "Style hero__image",
-      "default": "w-full pr-4 object-cover aspect-[0.95] md:pr-6 md:aspect-[1.1875]"
+      "default": "w-full object-cover aspect-[0.95] md:aspect-[1.1875]"
     },
     {
       "type": "textarea",
