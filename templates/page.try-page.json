@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "try-page": {
+      "type": "try-page",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "try-page"
+  ]
+}
